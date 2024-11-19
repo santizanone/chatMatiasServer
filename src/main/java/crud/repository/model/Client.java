@@ -33,14 +33,14 @@ public class Client implements Runnable {
                 if (rawData instanceof HandShake) {
                     HandShake handShake = (HandShake) rawData;
                     name = handShake.getClientName();
-                    Main.connectionList.add(this);
+                    MainServer.connectionList.add(this);
                     System.out.println("añadido a la lista");
                 } else if (rawData instanceof Message) {
                     Message message = (Message) rawData;
                     System.out.println("mensaje recibido " + message.getMessageForDestination());
-                    Main.sendMsgToSomeone(message);
+                    MainServer.sendMsgToSomeone(message);
                 }
-            }
+            }   
 
 
 

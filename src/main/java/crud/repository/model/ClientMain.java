@@ -46,7 +46,7 @@ public class ClientMain {
         while (true){
             Scanner entry = new Scanner(System.in);
             String msg = entry.nextLine();
-            Message message = new Message(clientName,destination,msg);
+            Message message = new Message(clientName,destination,msg,false);
             outputStream.writeObject(message);
             outputStream.flush();
             System.out.println("enviado");

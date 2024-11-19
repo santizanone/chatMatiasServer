@@ -6,7 +6,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 
-public class Main {
+public class MainServer {
 
     private final static int PORT = 9999;
     static volatile ArrayList<Client> connectionList = new ArrayList<>();

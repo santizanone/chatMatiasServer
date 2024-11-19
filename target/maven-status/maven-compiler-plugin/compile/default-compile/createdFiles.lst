@@ -1,0 +1,6 @@
+crud\repository\model\Client.class
+crud\repository\model\ClientMain.class
+crud\repository\model\Message.class
+crud\repository\model\Main.class
+crud\repository\model\ClientMain$1.class
+crud\repository\model\HandShake.class
